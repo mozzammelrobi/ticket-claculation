@@ -124,7 +124,7 @@
                             <div>
                                 <button class="px-4 py-3 text-green-500 flex gap-3 bg-[#1DD10026] ">
                                     <img class="" src="./images/seat-green-filled.png" alt="">
-                                    <span>40</span> sets left
+                                    <span id="total-seats">40</span> sets left
                                 </button>
                             </div>
 
@@ -170,7 +170,7 @@
             </div>
 
             <!-- ticket interface -->
-            <div class="flex gap-5 justify-between mt-7">
+            <div class="flex gap-5 py-8 justify-between mt-7">
                 <!-- ticket -->
                 <div class="flex-grow">
                     <div>
@@ -188,35 +188,35 @@
                     </div>
                     <!-- ticket button -->
                     <div class="grid grid-cols-4 gap-3">
-                        <button class="btn">A1</button>
-                        <button class="btn">A2</button>
-                        <button class="btn">A3</button>
-                        <button class="btn">A4</button>
-                        <button class="btn">B1</button>
-                        <button class="btn">B2</button>
-                        <button class="btn">B3</button>
-                        <button class="btn">B4</button>
+                        <button class="add-btn btn">A1</button>
+                        <button class="add-btn btn">A2</button>
+                        <button class="add-btn btn">A3</button>
+                        <button class="add-btn btn">A4</button>
+                        <button class="add-btn btn">B1</button>
+                        <button class="add-btn btn">B2</button>
+                        <button class="add-btn btn">B3</button>
+                        <button class="add-btn btn">B4</button>
                     </div>
                 </div>
 
 
 
                 <!-- form ----------------------------------->
-                <div class="flex-grow">
+                <div class="flex-grow ">
                     <h1 class="font-bold">Select Your Seat</h1>
                     <hr> <br> 
 
 
-                    <div class="bg-[#F7F8F8] px-5">
+                    <div class="bg-[#F7F8F8] px-5 py-8">
                         <div class="flex gap-4 justify-between ">
                             <!-- set number -->
-                            <div>
-                                <p>Seat <span class="text-green-400"> 0</span></p>
+                            <div id="seat-name-container">
+                                <p>Seat <span id="seat-count" class="text-green-400"> 0</span></p>
                             </div>
                             <!-- class -->
-                            <div> class</div>
+                            <div id="class-name"> <h1 class="font-bold">Class</h1></div>
                             <!-- price -->
-                            <div> price</div>
+                            <div id="price"> <h1 class="font-bold">price</h1></div>
                         </div> <hr><br>
                             <!-- total cost -->
                         <div class="flex justify-between border-green-400">
@@ -231,7 +231,7 @@
                             <button class="btn bg-green-500 text-white">Apply</button>
                         </div>
                         <!-- grand total -->
-                        <div class="flex justify-between">
+                        <div class="flex justify-between mb-8">
                             <h1 class="font-bold">Grand Total</h1>
                             <h1 class="font-bold">BDT: <span>0</span></h1>
                         </div>
@@ -244,6 +244,7 @@
     </main>
 
     <script src="./js/script.js"></script>
+    <script src="./js/utility.js"></script>
 </body>
 
 </html>
