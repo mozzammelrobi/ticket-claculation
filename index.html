@@ -11,81 +11,239 @@
 </head>
 
 <body class="container m-auto">
-  <header>
-      <!-- navbar -->
-      <nav>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a> About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl">P-Ticket</a>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a> About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-2xl">P-Ticket</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a> About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-green-400 text-xl px-7 py-4 ">Bus <img src="./images/bus-icon.png" alt=""></a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a> About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn text-green-400 text-xl px-7 py-4 ">Bus <img src="./images/bus-icon.png" alt=""></a>
-            </div>
-          </div>
-    </nav>
-    <!-- banner section -->
-    <section>
-        <div id="banner" class=" bg-auto w-full h-full bg-[url('./image/banner.png')] flex flex-col justify-center items-center  lg:mt-16 py-3 lg:py-16 px-10 lg:px-52">
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div id="banner"
+                class=" bg-auto w-full h-full bg-[url('./image/banner.png')] flex flex-col justify-center items-center  lg:mt-16 py-3 lg:py-16 px-10 lg:px-52">
 
-            <h1 class="text-6xl text-white text-center"> End-to-End Travel with <br>
-               <span class="text-green-400">P Paribahan</span>
-            </h1>
-            <p class="text-xl text-white text-center mt-4 mb-6"> Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
-            <button class="btn font-bold bg-green-400 hover:bg-green-400">Buy Tickets</button>
-        </div>
-    </section>
-  </header>
-  <main>
-    <!-- best offer section -->
-    <section class="mt-28 mb-28 text-center">
-        <h1 class="text-4xl mb-9">Best Offers for you</h1>
-        <div class="flex gap-7 flex-col lg:flex-row justify-center border">
-            <div class="flex  gap-5 bg-orange-400 p-12">
-              <div>
-                <h1 class="text-3xl font-bold">15% OFF</h1>
-                <p class="font-bold">on your next purchase</p>
-                <p>use by January 2024</p>
-              </div>
-              <div>
-                <h1 class="text-2xl font-bold">NEW15</h1>
-                <p>Coupon Code</p>
-              </div>
+                <h1 class="text-6xl text-white text-center"> End-to-End Travel with <br>
+                    <span class="text-green-400">P Paribahan</span>
+                </h1>
+                <p class="text-xl text-white text-center mt-4 mb-6"> Yes, you can run unit tests and view the results
+                    directly within the app. The integrated testing features allow for a streamlined</p>
+                <button class="btn font-bold bg-green-400 hover:bg-green-400">Buy Tickets</button>
             </div>
-            <div class="flex  gap-5 bg-orange-400 p-12">
-              <div>
-                <h1 class="text-3xl font-bold">15% OFF</h1>
-                <p class="font-bold">on your next purchase</p>
-                <p>use by January 2024</p>
-              </div>
-              <div>
-                <h1 class="text-2xl font-bold">NEW15</h1>
-                <p>Coupon Code</p>
-              </div>
+        </section>
+    </header>
+    <main>
+        <!-- best offer section -->
+        <section class="mt-28 mb-28 text-center">
+            <h1 class="text-4xl mb-9">Best Offers for you</h1>
+            <div class="flex gap-7 flex-col lg:flex-row justify-center border">
+                <div class="flex  gap-5 bg-orange-400 p-12">
+                    <div>
+                        <h1 class="text-3xl font-bold">15% OFF</h1>
+                        <p class="font-bold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex  gap-5 bg-orange-400 p-12">
+                    <div>
+                        <h1 class="text-3xl font-bold">15% OFF</h1>
+                        <p class="font-bold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <button class="btn text-green-400 bg-white mt-6 text-center">See All Offer</button>
-    </section>
-  </main>
+            <button class="btn text-green-400 bg-white mt-6 text-center">See All Offer</button>
+        </section>
 
+        <!-- paribahan section -->
+        <section class="mb-28 bg-[#FFFF] border-t-4 border-red-700 rounded-lg py-28">
+            <h1 class="text-2xl font-bold text-center">P.H Paribahan</h1>
+            <p class="mb-10 text-center">Yes, you can run unit tests and view the results directly within the app. The
+                integrated
+                testing features allow for a streamlined </p>
+
+
+
+            <!-- bus info-->
+            <div>
+                <div class="flex gap-8">
+                    <!-- first part --------------------------------------------->
+                    <div class="flex-grow">
+                        <!-- 1.1 -->
+                        <div class="border-green-400 flex justify-between mb-5">
+                            <!-- 1 -->
+                            <div class="flex gap-4">
+                                <div>
+                                    <img src="./images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-xl font-bold">Greenline Paribahan</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+
+
+                            <!-- button -->
+                            <div>
+                                <button class="px-4 py-3 text-green-500 flex gap-3 bg-[#1DD10026] ">
+                                    <img class="" src="./images/seat-green-filled.png" alt="">
+                                    <span>40</span> sets left
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- 1.2 -->
+                        <div class="bg-[#F7F8F8]  px-2 rounded py-4">
+                            <div class="flex justify-between">
+                                <p>Route</p>
+                                <p class="font-bold">Dhaka - sylhet</p>
+                            </div>
+                            <hr> <br>
+                            <div class="flex justify-between">
+                                <p>Deperture Time</p>
+                                <p class="font-bold">9:00 PM</p>
+                            </div>
+                            <hr> <br>
+                            <div>
+                                <button class="btn">
+                                    Boarding Point - Laxmipur
+                                </button>
+                                <button class="btn">
+                                    Dropping Point - Bogura
+                                </button>
+                                <button class="btn">
+                                    Est. Time - 11 Hour
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- second part -------------------------------------->
+                    <div class="flex flex-col gap-4  justify-center items-center px-6  border">
+                        <img class="w-9" src="./images/fare-tk.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <p class="text-xl font-bold">550 Taka</p>
+                            <p>per set</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ticket interface -->
+            <div class="flex gap-5 justify-between mt-7">
+                <!-- ticket -->
+                <div class="flex-grow">
+                    <div>
+                        <h1 class="font-bold">Select Your Seat</h1> <br>
+                        <hr>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2"><img src="./images/seat-gray.png" alt="">
+                                <p>Available</p>
+                            </div>
+                            <div class="flex gap-2"><img src="./images/seat-green-filled.png" alt="">
+                                <p class="text-green-400">selected</p>
+                            </div>
+                        </div>
+                        <hr><br>
+                    </div>
+                    <!-- ticket button -->
+                    <div class="grid grid-cols-4 gap-3">
+                        <button class="btn">A1</button>
+                        <button class="btn">A2</button>
+                        <button class="btn">A3</button>
+                        <button class="btn">A4</button>
+                        <button class="btn">B1</button>
+                        <button class="btn">B2</button>
+                        <button class="btn">B3</button>
+                        <button class="btn">B4</button>
+                    </div>
+                </div>
+
+
+
+                <!-- form ----------------------------------->
+                <div class="flex-grow">
+                    <h1 class="font-bold">Select Your Seat</h1>
+                    <hr> <br> 
+
+
+                    <div class="bg-[#F7F8F8] px-5">
+                        <div class="flex gap-4 justify-between ">
+                            <!-- set number -->
+                            <div>
+                                <p>Seat <span class="text-green-400"> 0</span></p>
+                            </div>
+                            <!-- class -->
+                            <div> class</div>
+                            <!-- price -->
+                            <div> price</div>
+                        </div> <hr><br>
+                            <!-- total cost -->
+                        <div class="flex justify-between border-green-400">
+                            <h1 class="font-bold">Total Price</h1>
+                            <h1 class="font-bold">BDT: <span id="total-price"> 0</span></h1>
+                        </div>
+
+                        <!-- coupon code input field -->
+
+                        <div class="flex flex-row my-5">
+                            <input class=" pl-3 flex-grow" type="text" placeholder="Have any coupon">
+                            <button class="btn bg-green-500 text-white">Apply</button>
+                        </div>
+                        <!-- grand total -->
+                        <div class="flex justify-between">
+                            <h1 class="font-bold">Grand Total</h1>
+                            <h1 class="font-bold">BDT: <span>0</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
