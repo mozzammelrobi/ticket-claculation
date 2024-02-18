@@ -7,6 +7,12 @@ for(const btn of btns){
    btn.addEventListener('click', function(e){
     count = count + 1;
 
+    if(count == 4){
+        for(const button of btns){
+            button.setAttribute('disabled', true)
+        } 
+    }
+
     const totalSeats = document.getElementById('total-seats').innerText;
     const convertedTotalSeat =parseInt(totalSeats)
     document.getElementById('total-seats').innerText = convertedTotalSeat - 1
@@ -56,9 +62,6 @@ function nextBtn(){
     document.getElementById('paribahan').classList.add('hidden')
 }
 
-
-
-
 document.getElementById('copone').addEventListener('keyup', function(e){
     const text = e.target.value;
     const coponeBtn = document.getElementById('copone-btn')
@@ -69,8 +72,6 @@ document.getElementById('copone').addEventListener('keyup', function(e){
         coponeBtn.setAttribute('disabled',true)
     }
 })
-
-
 
 function discount(){
     
