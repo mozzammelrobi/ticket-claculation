@@ -60,6 +60,7 @@ function nextBtn(){
     document.getElementById('header').classList.add('hidden')
     document.getElementById('best-offer').classList.add('hidden')
     document.getElementById('paribahan').classList.add('hidden')
+    document.getElementById('footer').classList.add('hidden')
 }
 
 document.getElementById('copone').addEventListener('keyup', function(e){
